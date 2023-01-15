@@ -40,6 +40,7 @@ margin: 1.25rem;
 
 .containerh1{
     color: hsl(218, 44%, 22%);
+    text-align: center;
 }
 
 .container p{
