@@ -47,7 +47,7 @@ gap: 1.5rem;
 
 main .cards article{
     background-color: white;
-    box-shadow: 0 0 16px  hsl(180, 62%, 55% 0.15 );
+    box-shadow: 0 0 16px hsl(180, 62%, 55%, 0.15 );
     padding: 1.5rem;
     border-radius: 0.5rem;  
 }
@@ -85,17 +85,36 @@ main .cards article img{
 
 @media (min-width: 768px){
     main > article{
-        max-width: 500px;
-        margin:auto;
+        max-width: 450px;
+        margin: auto;
     }
 
     main > article:first-child h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     main .cards{
-        max-width: 1200px;
+        max-width: 1400px;
         margin: auto;
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
+
+    main .cards article{
+        width: 400px;
+        flex: 1 ;
+    }
+ 
+    main .cards article:nth-child(odd){
+       transform: translateY(50%); 
+    }
+
+}
+
+.attribution{
+    font-size: 14px;
+    text-align: center;
+    padding: 2rem;
 }
